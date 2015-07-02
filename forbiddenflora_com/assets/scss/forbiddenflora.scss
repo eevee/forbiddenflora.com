@@ -36,7 +36,10 @@ body {
 	margin: 0;
 
 	> li {
-		@include flex(1 0 -moz-min-content);
+		@include flex(1 0 auto);
+		@include flex-basis(-moz-min-content);
+		@include flex-basis(-webkit-min-content);
+		@include flex-basis(min-content);
 		@include flexbox;
 		@include justify-content(center);
 		margin: 0.25em;
