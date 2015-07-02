@@ -17,7 +17,7 @@
         <ul class="inline plain">
             <li><a href="https://www.patreon.com/forbiddenflora"><img src="${request.static_url('spline:assets/images/global-link-patreon.png')}" alt="early access on Patreon"></a></li>
             <li><a href="/"><img src="${request.static_url('spline:assets/images/global-link-home.png')}" alt="Home"></a></li>
-            <li><a href="/comic/"><img src="${request.static_url('spline:assets/images/global-link-archive.png')}" alt="Archive"></a></li>
+            <li><a href="${request.route_url('comic.archive')}"><img src="${request.static_url('spline:assets/images/global-link-archive.png')}" alt="Archive"></a></li>
             <li><img src="${request.static_url('spline:assets/images/global-link-wiki.png')}" alt="Wiki" style="opacity: 0.3;"></li>
             <li><a href="/about"><img src="${request.static_url('spline:assets/images/global-link-about.png')}" alt="About"></a></li>
             <li><a href="irc://irc.veekun.com/forbiddenflora"><img src="${request.static_url('spline:assets/images/global-link-chat.png')}" alt="Chat"></a></li>
