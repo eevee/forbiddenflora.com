@@ -1,0 +1,66 @@
+@import "vendor/flex";
+@import "defs";
+
+body {
+	background: url(/static/images/global-bg-confectionary.png) $body-bg-color;
+}
+
+.forflor-header {
+	@include flexbox;
+	@include align-items(flex-end);
+	@include justify-content(space-around);
+	// allow Beleth's elbow to appear on top
+	z-index: 1;
+	position: relative;
+	padding-top: 1em;
+
+	.forflor-header--left {
+		margin-right: -20px;
+	}
+	.forflor-header--logo {
+		margin-bottom: 35px;
+	}
+	.forflor-header--right {
+		margin-left: -80px;
+		// Beleth's arm overlaps the navbar
+		margin-bottom: -26px;
+	}
+}
+.forflor-navbar {
+	margin: 0 1em;
+	background: #c354a9;
+}
+.forflor-navbar > ul {
+	@include flexbox;
+	@include align-items(stretch);
+	margin: 0;
+
+	> li {
+		@include flex(1 0 -moz-min-content);
+		@include flexbox;
+		@include justify-content(center);
+		margin: 0.25em;
+		min-width: -moz-min-content;
+		min-width: min-content;
+
+		background: #ffacdf;
+		transition: background-color 0.2s linear;
+
+		&:hover {
+			background: #f096d2;
+		}
+
+		> * {
+			@include flexbox;
+			@include align-items(center);
+			@include justify-content(center);
+			padding: 0.25em;
+		}
+		> a {
+			@include flex(1);
+		}
+		img {
+			@include align-self(center);
+		}
+	}
+}
