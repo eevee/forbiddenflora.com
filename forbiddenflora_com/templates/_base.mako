@@ -1,9 +1,11 @@
 <%inherit file="spline:templates/_base.mako"/>
+<%! import random %>
 
 <%block name="head_extra">
     ${parent.head_extra()}
     <link rel="stylesheet" type="text/css" href="${request.route_url('pyscss', css_path='forbiddenflora')}">
     <link rel="icon" type="image/png" href="${request.static_url('spline:assets/images/favicon.png')}">
+    <script src="http://ads.thehiveworks.com/delivery/spcjs.php?id=118"></script>
 </%block>
 
 
@@ -28,6 +30,15 @@
 <%block name="extra_global_nav">
     ${parent.extra_global_nav()}
     <li><a href="irc://irc.veekun.com/forbiddenflora">Chat</a></li>
+</%block>
+
+<%block name="main">
+    <div class="ad ad-728x90">
+        <!--/* 728x90 */-->
+        <% cachebuster = random.randrange(1000000) %>
+        <iframe id='a37d25b0' name='a37d25b0' src='http://ads.thehiveworks.com/delivery/afr.php?zoneid=372&amp;target=_blank&amp;cb=${cachebuster}' frameborder='0' scrolling='no' width='728' height='90' allowtransparency='true'><a href='http://ads.thehiveworks.com/delivery/ck.php?n=a3ecb401&amp;cb=${cachebuster}' target='_blank'><img src='http://ads.thehiveworks.com/delivery/avw.php?zoneid=372&amp;cb=${cachebuster}&amp;n=a3ecb401' border='0' alt='' /></a></iframe>
+    </div>
+    ${parent.main()}
 </%block>
 
 ${next.body()}

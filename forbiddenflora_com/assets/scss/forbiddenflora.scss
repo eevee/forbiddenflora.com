@@ -5,6 +5,13 @@ body {
 	background: url(/static/images/global-bg-confectionary.png) $body-bg-color;
 }
 
+// override the front page sidebar stuff in the main css
+// TODO does that stuff actually belong there, though
+.front-page-layout .front-page-sidebar {
+	padding: 1em;
+	width: 160px;
+}
+
 .forflor-header {
 	@include flexbox;
 	@include align-items(flex-end);
