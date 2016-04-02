@@ -5,10 +5,8 @@
 <main class="front-page-layout">
     <div class="front-page-main">
         ## TODO this is duplicated from _base.mako
-        <div class="ad ad-728x90">
-            <!--/* 728x90 */-->
-            <% cachebuster = random.randrange(1000000) %>
-            <iframe id='a37d25b0' name='a37d25b0' src='http://ads.thehiveworks.com/delivery/afr.php?zoneid=372&amp;target=_blank&amp;cb=${cachebuster}' frameborder='0' scrolling='no' width='728' height='90' allowtransparency='true'><a href='http://ads.thehiveworks.com/delivery/ck.php?n=a3ecb401&amp;cb=${cachebuster}' target='_blank'><img src='http://ads.thehiveworks.com/delivery/avw.php?zoneid=372&amp;cb=${cachebuster}&amp;n=a3ecb401' border='0' alt='' /></a></iframe>
+        <div class="forflor-floraverse-link">
+            <a href="http://floraverse.com/"><img src="${request.static_url('spline:assets/images/global-floraverse-banner.png')}" alt="more of these three at Floraverse"></a>
         </div>
         ${self.default_tile()}
     </div>
