@@ -38,7 +38,7 @@
     </div>
     -->
     <div class="temp-extra-banner">
-        <a href=""><img src="http://papayakitty.com/puppets/dolladr.png" alt="Beleth dolls!  Fund now on Kickstarter!"></a>
+        <a href="https://www.kickstarter.com/projects/floraverse/floraverse-beleth-makes-dolls-official-plush-run"><img src="http://papayakitty.com/puppets/dolladr.png" alt="Beleth dolls!  Fund now on Kickstarter!"></a>
     </div>
     ${parent.main()}
 </%block>
