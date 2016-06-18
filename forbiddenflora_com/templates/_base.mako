@@ -32,8 +32,13 @@
 </%block>
 
 <%block name="main">
+    <!--
     <div class="forflor-floraverse-link">
         <a href="http://floraverse.com/"><img src="${request.static_url('spline:assets/images/global-floraverse-banner.png')}" alt="more of these three at Floraverse"></a>
+    </div>
+    -->
+    <div class="temp-extra-banner">
+        <a href=""><img src="http://papayakitty.com/puppets/dolladr.png" alt="Beleth dolls!  Fund now on Kickstarter!"></a>
     </div>
     ${parent.main()}
 </%block>

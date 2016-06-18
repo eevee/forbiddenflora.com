@@ -5,8 +5,13 @@
 <main class="front-page-layout">
     <div class="front-page-main">
         ## TODO this is duplicated from _base.mako
+        <!--
         <div class="forflor-floraverse-link">
             <a href="http://floraverse.com/"><img src="${request.static_url('spline:assets/images/global-floraverse-banner.png')}" alt="more of these three at Floraverse"></a>
+        </div>
+        -->
+        <div class="temp-extra-banner">
+            <a href=""><img src="http://papayakitty.com/puppets/dolladr.png" alt="Beleth dolls!  Fund now on Kickstarter!"></a>
         </div>
         ${self.default_tile()}
     </div>
