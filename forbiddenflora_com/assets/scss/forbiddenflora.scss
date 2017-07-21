@@ -93,3 +93,8 @@ body {
     text-align: center;
     line-height: 1;
 }
+
+// block disqus's obnoxious ass scummy text ads, which are thankfully in a separate iframe
+#dsq-app4 {
+    display: none;
+}
